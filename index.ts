@@ -19,3 +19,24 @@ let user = new Student("Jane", "M.", "User");
 
 console.log(greeter(user));
 console.log(num);
+
+const array: Array<number> = [1];
+const tuple: [string, number] = ['a', 1];
+
+enum Color { Red = 100, Green, Blue };
+console.log(Color.Red);
+console.log(Color[100]);
+console.log(Color.Green);
+console.log(Color.Blue);
+
+const str: Object = 'a';
+
+const list2: any[] = [1, 'a', false];
+list2[1] = 0;
+
+const a: Object = 'a';
+(<string>a).split('').join('');
+
+function func() {
+	throw 'a';
+}

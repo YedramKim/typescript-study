@@ -16,3 +16,16 @@ function greeter(person) {
 var user = new Student("Jane", "M.", "User");
 console.log(greeter(user));
 console.log(module_1.num);
+var array = [1];
+var tuple = ['a', 1];
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 100] = "Red";
+    Color[Color["Green"] = 101] = "Green";
+    Color[Color["Blue"] = 102] = "Blue";
+})(Color || (Color = {}));
+;
+console.log(Color.Red);
+console.log(Color[100]);
+console.log(Color.Green);
+console.log(Color.Blue);
