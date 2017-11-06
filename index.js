@@ -29,3 +29,27 @@ console.log(Color.Red);
 console.log(Color[100]);
 console.log(Color.Green);
 console.log(Color.Blue);
+var str = 'a';
+var list2 = [1, 'a', false];
+list2[1] = 0;
+var a = 'a';
+a.split('').join('');
+function func() {
+    throw 'a';
+}
+function sumMatrix(matrix) {
+    var sum = 0;
+    for (var i = 0; i < matrix.length; i++) {
+        var currentRow = matrix[i];
+        for (var i_1 = 0; i_1 < currentRow.length; i_1++) {
+            sum += currentRow[i_1];
+        }
+    }
+    return sum;
+}
+var _loop_1 = function (i) {
+    setTimeout(function () { console.log(i); }, 100 * i);
+};
+for (var i = 0; i < 10; i++) {
+    _loop_1(i);
+}
